@@ -2,7 +2,7 @@
 
 **Client:** Tania Lena Cahalane, a beauty therapist with 25+ years' experience, NVQ Level 2 & 3
 **Location:** Allure Beauty Suites, Peacehaven, East Sussex
-**Live site:** [ADD LIVE LINK]
+**Live site:** [tlc-beauty.vercel.app](https://tlc-beauty.vercel.app)
 
 ![Desktop home page](images/desktop-home.png)
 
