@@ -1,0 +1,11 @@
+export { Hero } from "./Hero";
+export { TrustBar } from "./TrustBar";
+export { Signature } from "./Signature";
+export { MeetTania } from "./MeetTania";
+export { Results as BeforeAfterSection } from "./Results";
+export { Reviews } from "./Reviews";
+export { HowBooking } from "./HowBooking";
+export { GiftVouchers } from "./GiftVouchers";
+export { Faq } from "./Faq";
+export { Instagram } from "./Instagram";
+export { FinalCta } from "./FinalCta";
