@@ -25,7 +25,7 @@ export default function GalleryPage() {
       <section className="section-y">
         <div className="container-lux">
           <ul className="columns-1 gap-5 sm:columns-2 lg:columns-3">
-            {images.gallery.map((img, i) => (
+            {images.gallery.filter((img) => img.src).map((img, i) => (
               <Reveal as="li" key={i} delay={(i % 3) * 0.08} className="mb-5 break-inside-avoid">
                 <figure>
                   <ImageSlot slot={img} style={img.ratio ? { aspectRatio: img.ratio } : undefined} className={`rounded-[1.5rem] ${img.ratio ? "" : i % 3 === 1 ? "aspect-[3/4]" : i % 3 === 2 ? "aspect-square" : "aspect-[4/5]"}`} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" tint={i % 2 ? "stone" : "sand"} />

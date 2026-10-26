@@ -23,7 +23,7 @@ export function Instagram() {
           </a>
         </Reveal>
         <ul className="mt-10 grid grid-cols-3 gap-2 sm:gap-4 lg:grid-cols-6">
-          {images.gallery.slice(0, 6).map((img, i) => (
+          {[...images.gallery.filter((img) => img.src), images.heroTania].slice(0, 6).map((img, i) => (
             <Reveal as="li" key={i} delay={i * 0.05}>
               <a href={site.instagramUrl} target="_blank" rel="noopener" aria-label={`${img.label} on Instagram`} className="block overflow-hidden rounded-2xl">
                 <ImageSlot slot={img} className="aspect-square transition-transform duration-700 ease-lux hover:scale-[1.04]" sizes="(min-width: 1024px) 16vw, 33vw" tint={i % 2 ? "stone" : "sand"} />

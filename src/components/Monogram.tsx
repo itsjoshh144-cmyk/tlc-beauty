@@ -1,8 +1,8 @@
 // The site's signature mark: a round "TLC" seal with the trading name set around it.
-export function Monogram({ className = "size-28", tone = "gold" }: { className?: string; tone?: "gold" | "cream" }) {
+export function Monogram({ className = "size-28", tone = "gold", decorative = false }: { className?: string; tone?: "gold" | "cream"; decorative?: boolean }) {
   const color = tone === "gold" ? "var(--color-gold)" : "var(--color-gold-soft)";
   return (
-    <svg viewBox="0 0 200 200" className={className} role="img" aria-label="TLC Beauty Specialist seal">
+    <svg viewBox="0 0 200 200" className={className} {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": "TLC Beauty Specialist seal" })}>
       <defs>
         <path id="seal-ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
       </defs>

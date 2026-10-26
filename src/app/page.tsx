@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { BeforeAfterSection, Faq, FinalCta, GiftVouchers, Hero, HowBooking, Instagram, MeetTania, Reviews, Signature, TrustBar } from "@/components/home";
+import { hasReviews } from "@/lib/reviews";
 import { faqSchema } from "@/lib/schema";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <Signature />
       <MeetTania />
       <BeforeAfterSection />
-      <Reviews />
+      {hasReviews && <Reviews />}
       <HowBooking />
       <GiftVouchers />
       <Faq />

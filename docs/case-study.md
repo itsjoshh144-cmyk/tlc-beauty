@@ -14,7 +14,7 @@ Tania is a highly experienced one-person business, but online she looked like ev
 - **"Build your visit" price menu.** Clients tap treatments from the full list of 43 and see the total time and price add up as they go. They can then book, or send the list straight to Tania on WhatsApp.
 - **Built around Tania herself.** The headline sells the result ("Brighter skin and lifted lashes, by a Peacehaven therapist with 25 years' experience"). Her qualifications, years of experience and one-to-one service sit near the top of the page.
 - **A look that's hers alone.** Cream and antique gold, arched photo frames and a "TLC" seal designed for the brand. Nothing comes from a template.
-- **Before/after slider and reviews carousel** to show real results.
+- **Before/after slider** with real client results, plus a reviews carousel that switches on as soon as reviews are added.
 - **Set up for local search.** The site is marked up as a beauty salon for Google, with opening hours, prices and an FAQ. Page titles target Peacehaven, Newhaven, Saltdean, Rottingdean, Telscombe, Seaford and Brighton, and the site has a sitemap and link previews for social media.
 
 ![Treatment builder](images/desktop-builder.png)

@@ -3,3 +3,6 @@
 export type Review = { name: string; text: string; treatment?: string; source?: string };
 
 export const reviews: Review[] = [];
+
+// The Reviews page, nav link and home section only appear once reviews exist.
+export const hasReviews = reviews.length > 0;

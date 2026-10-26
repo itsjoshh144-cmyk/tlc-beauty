@@ -3,7 +3,6 @@ import { BookButton, WhatsAppButton } from "@/components/Buttons";
 import { IconClock, IconPhone, IconPin } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { Todo } from "@/components/Todo";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -44,9 +43,7 @@ export default function ContactPage() {
                 <a href={site.mapLink} target="_blank" rel="noopener" className="mt-2 inline-block font-semibold underline underline-offset-4">
                   Get directions
                 </a>
-                <div className="mt-4">
-                  {site.parking ? <p className="text-cocoa">{site.parking}</p> : <Todo>parking details</Todo>}
-                </div>
+                {site.parking && <p className="mt-4 text-cocoa">{site.parking}</p>}
               </div>
             </div>
             <div className="flex gap-4">

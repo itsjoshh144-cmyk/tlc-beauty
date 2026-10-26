@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
+import { hasReviews } from "@/lib/reviews";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/treatments", "/about", "/gallery", "/reviews", "/contact"];
+  const pages = ["", "/treatments", "/about", "/gallery", ...(hasReviews ? ["/reviews"] : []), "/contact"];
   return pages.map((p) => ({
     url: `${site.url}${p}`,
     lastModified: new Date(),

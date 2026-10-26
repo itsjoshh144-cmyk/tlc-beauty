@@ -1,12 +1,11 @@
 import { site } from "@/lib/site";
 import { IconStar } from "../Icons";
-import { Todo } from "../Todo";
 
 export function TrustBar() {
   const items = [
     { big: "NVQ 2 & 3", small: "Fully qualified therapist" },
     { big: "25+ years", small: "Experience in beauty" },
-    { big: "rating", small: "" },
+    site.rating ? { big: "rating", small: "" } : { big: "Clinicare", small: "Clinical skincare" },
     { big: "One-to-one", small: "Private suite in Peacehaven" },
   ];
   return (
@@ -30,16 +29,7 @@ export function TrustBar() {
                   </span>
                   <span className="text-xs uppercase tracking-[0.14em] text-cocoa">{site.rating.source}</span>
                 </>
-              ) : (
-                <>
-                  <span className="flex items-center gap-1 text-gold/50" aria-hidden>
-                    {Array.from({ length: 5 }).map((_, s) => (
-                      <IconStar key={s} />
-                    ))}
-                  </span>
-                  <Todo>Google rating</Todo>
-                </>
-              )
+              ) : null
             ) : (
               <>
                 <span className="h-display text-[1.75rem] sm:text-3xl">{item.big}</span>

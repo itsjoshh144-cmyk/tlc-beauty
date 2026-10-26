@@ -12,21 +12,30 @@ npm run dev      # http://localhost:3000
 npm run build    # production build check
 ```
 
-## Filling in the "To add" slots
+## Still to add (hidden until filled in)
 
-Anything not yet supplied shows on the page as a dashed **"To add: …"** tag or a **"Photo to add"** panel. Each one is filled in a single place:
+The live site shows no "to add" markers. Each item below stays hidden until you fill it in, then appears on the next deploy.
 
-| What | Where | How |
+| Item | Where to fill it in | What appears once it's filled in |
 |---|---|---|
-| Photos | `src/lib/images.ts` | Put the image in `public/images/` (e.g. `public/images/tania.jpg`), then set `src: "/images/tania.jpg"` on the matching slot. |
-| Reviews | `src/lib/reviews.ts` | Paste real reviews word for word: `{ name: "Sarah, Saltdean", text: "…", treatment: "Lash lift" }` |
-| Star rating | `src/lib/site.ts` → `rating` | `{ value: 5.0, count: 87, source: "Google" }`. This also adds the rating to the search-engine schema. |
-| Google review link | `src/lib/site.ts` → `googleReviewUrl` | Your "Ask for reviews" link from Google Business Profile |
-| New client offer | `src/lib/site.ts` → `newClientOffer` | e.g. `"15% off your first facial."` |
-| Gift vouchers | `src/lib/site.ts` → `giftVouchers` | e.g. `"Buy online through Timely, or in person."` |
-| Parking | `src/lib/site.ts` → `parking` | e.g. `"Free on-street parking on …"` |
-| Cancellation policy | `src/lib/site.ts` → `cancellationPolicy` | Shown in the FAQ |
-| Live domain | Vercel env `NEXT_PUBLIC_SITE_URL` | e.g. `https://www.tlcbeautyspecialist.co.uk`. Used for the sitemap, canonical links and schema. |
+| New client offer | `src/lib/site.ts` → `newClientOffer`, e.g. `"15% off your first facial."` | Dark offer banner across the top of every page |
+| Parking | `src/lib/site.ts` → `parking`, e.g. `"Free on-street parking on …"` | Contact page (under the address) and a "Is there parking?" FAQ |
+| Cancellation policy | `src/lib/site.ts` → `cancellationPolicy` | "Can I cancel or move my booking?" FAQ |
+| Gift voucher details | `src/lib/site.ts` → `giftVouchers`, e.g. `"Buy online through Timely, or in person."` | A line in the Gift vouchers section and a "Do you sell gift vouchers?" FAQ |
+| Reviews | `src/lib/reviews.ts`. Paste real reviews word for word: `{ name: "Sarah, Saltdean", text: "…", treatment: "Lash lift" }` | Reviews carousel on the home page, the Reviews page and its menu link, and the sitemap entry. Until then, `/reviews` redirects to the home page. |
+| Star rating | `src/lib/site.ts` → `rating`, e.g. `{ value: 5.0, count: 87, source: "Google" }` | Replaces "Clinicare" in the trust bar; rating summary on the reviews sections; rating in Google schema |
+| Google review link | `src/lib/site.ts` → `googleReviewUrl` | "Leave a review" link on the Reviews page |
+| Photos | Put the file in `public/images/`, then set `src: "/images/name.jpg"` on its slot in `src/lib/images.ts` | Replaces the plain TLC-seal panel, or adds the photo to the gallery and Instagram strip |
+
+Photo slots still empty:
+- `sigLash`: lash lift result (signature treatment card)
+- `sigWax`: hot wax / waxing room (signature treatment card)
+- `suite`: the treatment room (About page)
+- `voucher`: gift voucher (home page)
+- Gallery: lash lift, gel manicure, BIAB, the suite, lash & brow tint, gel pedicure, hot stone massage
+
+Other settings:
+- **Live domain:** Vercel env `NEXT_PUBLIC_SITE_URL` (e.g. `https://www.tlcbeautyspecialist.co.uk`). Used for the sitemap, canonical links and schema.
 
 ## Deploy to Vercel (step by step)
 

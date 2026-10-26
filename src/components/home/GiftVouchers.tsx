@@ -4,7 +4,6 @@ import { WhatsAppButton } from "../Buttons";
 import { IconGift } from "../Icons";
 import { ImageSlot } from "../ImageSlot";
 import { Reveal } from "../Reveal";
-import { Todo } from "../Todo";
 
 export function GiftVouchers() {
   return (
@@ -23,9 +22,7 @@ export function GiftVouchers() {
             <p className="mt-5 text-lg leading-relaxed text-cocoa">
               Vouchers for any treatment or amount. Perfect for birthdays, Mother&rsquo;s Day, or a thank-you that actually gets used.
             </p>
-            <div className="mt-6">
-              {site.giftVouchers ? <p className="text-cocoa">{site.giftVouchers}</p> : <Todo>how vouchers are bought &amp; delivered</Todo>}
-            </div>
+            {site.giftVouchers && <p className="mt-6 text-cocoa">{site.giftVouchers}</p>}
             <WhatsAppButton className="mt-8" variant="dark" text="Hi Tania, I'd like to buy a gift voucher.">
               Ask Tania for a voucher
             </WhatsAppButton>
