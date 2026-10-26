@@ -28,7 +28,7 @@ export default function GalleryPage() {
             {images.gallery.map((img, i) => (
               <Reveal as="li" key={i} delay={(i % 3) * 0.08} className="mb-5 break-inside-avoid">
                 <figure>
-                  <ImageSlot slot={img} className={`rounded-[1.5rem] ${i % 3 === 1 ? "aspect-[3/4]" : i % 3 === 2 ? "aspect-square" : "aspect-[4/5]"}`} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" tint={i % 2 ? "stone" : "sand"} />
+                  <ImageSlot slot={img} style={img.ratio ? { aspectRatio: img.ratio } : undefined} className={`rounded-[1.5rem] ${img.ratio ? "" : i % 3 === 1 ? "aspect-[3/4]" : i % 3 === 2 ? "aspect-square" : "aspect-[4/5]"}`} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" tint={i % 2 ? "stone" : "sand"} />
                   {img.src && <figcaption className="mt-3 text-sm text-cocoa">{img.label}</figcaption>}
                 </figure>
               </Reveal>

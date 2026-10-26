@@ -10,7 +10,7 @@ export function Results() {
           <Reveal>
             <p className="eyebrow">Results</p>
             <h2 className="h-display mt-4 text-[2.4rem] sm:text-5xl lg:text-[3.6rem]">
-              Real clients, real skin. <em className="text-gold-ink">No filters.</em>
+              Real clients, real results. <em className="text-gold-ink">No filters.</em>
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-cocoa">
               Drag the slider to see the difference. Every photo is one of Tania&rsquo;s own clients, shared with their permission.

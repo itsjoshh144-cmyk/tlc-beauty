@@ -45,7 +45,7 @@ export function Hero() {
           <div className="absolute -bottom-6 -left-4 rounded-full bg-cream p-1.5 shadow-[0_10px_40px_-12px_rgba(43,33,28,0.35)] sm:-left-10">
             <Monogram className="size-28 sm:size-32" />
           </div>
-          <div className="absolute -right-2 top-10 rounded-2xl bg-ivory/95 px-5 py-4 shadow-[0_10px_40px_-14px_rgba(43,33,28,0.35)] backdrop-blur sm:-right-6">
+          <div className="absolute -right-2 bottom-16 rounded-2xl sm:bottom-auto sm:top-10 bg-ivory/95 px-5 py-4 shadow-[0_10px_40px_-14px_rgba(43,33,28,0.35)] backdrop-blur sm:-right-6">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cocoa">Wed &amp; Fri · 9am – 5pm</p>
             <p className="h-display mt-1 text-2xl">Book online, 24/7</p>
           </div>
