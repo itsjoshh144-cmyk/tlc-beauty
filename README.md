@@ -28,11 +28,10 @@ The live site shows no "to add" markers. Each item below stays hidden until you 
 | Photos | Put the file in `public/images/`, then set `src: "/images/name.jpg"` on its slot in `src/lib/images.ts` | Replaces the plain TLC-seal panel, or adds the photo to the gallery and Instagram strip |
 
 Photo slots still empty:
-- `sigLash`: lash lift result (signature treatment card)
 - `sigWax`: hot wax / waxing room (signature treatment card)
 - `suite`: the treatment room (About page)
 - `voucher`: gift voucher (home page)
-- Gallery: lash lift, gel manicure, BIAB, the suite, lash & brow tint, gel pedicure, hot stone massage
+- Gallery: gel manicure, BIAB, the suite, lash & brow tint, gel pedicure, hot stone massage
 
 Other settings:
 - **Live domain:** Vercel env `NEXT_PUBLIC_SITE_URL` (e.g. `https://www.tlcbeautyspecialist.co.uk`). Used for the sitemap, canonical links and schema.
