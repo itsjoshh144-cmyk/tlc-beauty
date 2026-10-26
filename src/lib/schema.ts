@@ -22,7 +22,6 @@ export function salonSchema() {
       postalCode: site.address.postcode,
       addressCountry: "GB",
     },
-    geo: { "@type": "GeoCoordinates", latitude: site.geo.lat, longitude: site.geo.lng },
     hasMap: site.mapLink,
     areaServed: site.areas.map((name) => ({ "@type": "City", name })),
     openingHoursSpecification: site.hours.map((h) => ({

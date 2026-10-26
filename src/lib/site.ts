@@ -20,7 +20,6 @@ export const site = {
     county: "East Sussex",
     postcode: "BN10 8JR",
   },
-  geo: { lat: 50.7926, lng: -0.0006 },
   mapEmbed:
     "https://www.google.com/maps?q=Allure+Beauty+Suites,+226+South+Coast+Road,+Peacehaven,+BN10+8JR&output=embed",
   mapLink:
