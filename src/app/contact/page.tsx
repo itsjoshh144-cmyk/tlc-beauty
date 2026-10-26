@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { BookButton, WhatsAppButton } from "@/components/Buttons";
-import { ContactForm } from "@/components/ContactForm";
 import { IconClock, IconPhone, IconPin } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
@@ -89,16 +88,27 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="rounded-[1.75rem] border border-gold/25 bg-ivory p-7 sm:p-10">
-              <h2 className="h-display text-4xl">Send a message</h2>
-              <p className="mt-2 text-cocoa">Questions about a treatment, patch tests or vouchers.</p>
-              {!process.env.RESEND_API_KEY && (
-                <div className="mt-3">
-                  <Todo>email sending key (RESEND_API_KEY)</Todo>
-                </div>
-              )}
-              <div className="mt-7">
-                <ContactForm />
+            <div className="rounded-[1.75rem] bg-espresso p-7 text-cream sm:p-10">
+              <p className="eyebrow !text-gold-soft">Ready when you are</p>
+              <h2 className="h-display mt-3 text-4xl sm:text-5xl">
+                Book, message <em className="text-gold-soft">or call</em>
+              </h2>
+              <p className="mt-4 leading-relaxed text-cream/75">
+                Pick a time online in under a minute, or message Tania on WhatsApp about treatments, patch tests or vouchers.
+              </p>
+              <div className="mt-8 flex flex-col gap-3">
+                <BookButton variant="gold">Book online</BookButton>
+                <WhatsAppButton
+                  variant="outline"
+                  className="!border-cream/30 !text-cream hover:!border-cream"
+                  text="Hi Tania, I have a question about a treatment."
+                />
+                <a
+                  href={site.phoneHref}
+                  className="inline-flex min-h-12 items-center justify-center gap-2.5 rounded-full border border-cream/30 px-7 text-[0.95rem] font-semibold tracking-wide text-cream transition-colors hover:border-cream"
+                >
+                  <IconPhone className="size-5" /> Call {site.phoneDisplay}
+                </a>
               </div>
             </div>
           </Reveal>

@@ -12,7 +12,6 @@ export const site = {
   phoneHref: "tel:+447841709929",
   receptionDisplay: "01273 701742",
   receptionHref: "tel:+441273701742",
-  email: "tlc.beautyspecialist@gmail.com",
   whatsappHref: "https://wa.me/447841709929",
   instagramHandle: "@tlc.beautyspecialist",
   instagramUrl: "https://www.instagram.com/tlc.beautyspecialist/",

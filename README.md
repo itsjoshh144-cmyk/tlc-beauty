@@ -2,7 +2,7 @@
 
 Website for Tania Lena Cahalane's beauty business at Allure Beauty Suites, Peacehaven. Built with Next.js 15, Tailwind CSS 4 and Framer Motion.
 
-Pages: Home, Treatments (filterable menu and visit builder), About, Gallery, Reviews and Contact (map, hours and form). The site also includes BeautySalon and FAQ schema, a sitemap, robots.txt and a generated Open Graph image.
+Pages: Home, Treatments (filterable menu and visit builder), About, Gallery, Reviews and Contact (map, hours, and Book/WhatsApp/Call buttons). The site also includes BeautySalon and FAQ schema, a sitemap, robots.txt and a generated Open Graph image.
 
 ## Run it locally
 
@@ -26,7 +26,6 @@ Anything not yet supplied shows on the page as a dashed **"To add: …"** tag or
 | Gift vouchers | `src/lib/site.ts` → `giftVouchers` | e.g. `"Buy online through Timely, or in person."` |
 | Parking | `src/lib/site.ts` → `parking` | e.g. `"Free on-street parking on …"` |
 | Cancellation policy | `src/lib/site.ts` → `cancellationPolicy` | Shown in the FAQ |
-| Contact form email | `src/lib/site.ts` → `email` | Already set to tlc.beautyspecialist@gmail.com. The form only needs `RESEND_API_KEY` in Vercel to start sending (see below). |
 | Live domain | Vercel env `NEXT_PUBLIC_SITE_URL` | e.g. `https://www.tlcbeautyspecialist.co.uk`. Used for the sitemap, canonical links and schema. |
 
 ## Deploy to Vercel (step by step)
@@ -37,10 +36,6 @@ Anything not yet supplied shows on the page as a dashed **"To add: …"** tag or
 4. Vercel detects **Next.js** automatically. Leave the build settings as they are.
 5. Open **Environment Variables** and add:
    - `NEXT_PUBLIC_SITE_URL`: the address the site will live at. Use `https://tlc-beauty.vercel.app` for now and change it once you add a custom domain.
-   - For the contact form, add these too (or skip them for now and the form will point people to WhatsApp):
-     - `RESEND_API_KEY`: create a free account at <https://resend.com> **signed up with tlc.beautyspecialist@gmail.com**, then go to **API Keys → Create**.
-     - `CONTACT_TO_EMAIL` (optional): only needed to send form messages somewhere other than tlc.beautyspecialist@gmail.com.
-     - `CONTACT_FROM_EMAIL` (optional): e.g. `TLC Beauty <hello@yourdomain.co.uk>`. This only works after you verify the domain in Resend. Without it, messages come from Resend's test sender, which can only deliver to the email address you signed up to Resend with.
 6. Click **Deploy**. After about a minute you get a live link like `https://tlc-beauty.vercel.app`.
 7. **Custom domain (optional):** go to Project → **Settings → Domains → Add**, type the domain, and follow the DNS instructions Vercel shows. Then update `NEXT_PUBLIC_SITE_URL` and click **Redeploy**.
 8. **Google (recommended):** add the site to Google Search Console and submit `https://YOURDOMAIN/sitemap.xml`. Put the website link on the Google Business Profile as well.
