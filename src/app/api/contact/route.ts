@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
+import { site } from "@/lib/site";
 
 // Sends contact form messages to the owner via Resend (https://resend.com).
-// Set RESEND_API_KEY and CONTACT_TO_EMAIL in Vercel. CONTACT_FROM_EMAIL is
+// Set RESEND_API_KEY in Vercel. CONTACT_TO_EMAIL overrides the owner's address
+// from site.ts. CONTACT_FROM_EMAIL is
 // optional and must be on a domain verified in Resend.
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
@@ -14,7 +16,7 @@ export async function POST(req: Request) {
   }
 
   const key = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
+  const to = process.env.CONTACT_TO_EMAIL ?? site.email;
   if (!key || !to) {
     return NextResponse.json({ error: "Contact email is not configured yet" }, { status: 503 });
   }

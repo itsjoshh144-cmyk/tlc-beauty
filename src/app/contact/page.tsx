@@ -78,6 +78,12 @@ export default function ContactPage() {
                   {site.phoneDisplay}
                 </a>
                 <p className="text-sm text-cocoa">If Tania is with a client, leave a message and she&rsquo;ll call you back.</p>
+                <p className="mt-4 text-sm text-cocoa">
+                  Allure Beauty Suites reception:{" "}
+                  <a href={site.receptionHref} className="font-semibold text-espresso">
+                    {site.receptionDisplay}
+                  </a>
+                </p>
               </div>
             </div>
           </Reveal>
@@ -86,9 +92,9 @@ export default function ContactPage() {
             <div className="rounded-[1.75rem] border border-gold/25 bg-ivory p-7 sm:p-10">
               <h2 className="h-display text-4xl">Send a message</h2>
               <p className="mt-2 text-cocoa">Questions about a treatment, patch tests or vouchers.</p>
-              {!process.env.CONTACT_TO_EMAIL && (
+              {!process.env.RESEND_API_KEY && (
                 <div className="mt-3">
-                  <Todo>owner email for form messages (CONTACT_TO_EMAIL)</Todo>
+                  <Todo>email sending key (RESEND_API_KEY)</Todo>
                 </div>
               )}
               <div className="mt-7">
