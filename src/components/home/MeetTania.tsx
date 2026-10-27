@@ -26,8 +26,9 @@ export function MeetTania() {
               looks in the mirror and smiles.
             </p>
             <p>
-              I work alone, by appointment, from a private suite at Allure Beauty Suites in Peacehaven. That means no rushing, no being
-              passed between therapists, and someone who remembers your skin from one visit to the next.
+              I have my own private treatment room inside Allure Beauty Suites, a friendly beauty clinic in Peacehaven that I share with
+              other skilled practitioners. You&rsquo;ll see me at every appointment, you&rsquo;ll never be rushed, and I&rsquo;ll remember
+              your skin from one visit to the next.
             </p>
             <p>Clients come from {site.areas.slice(1, -1).join(", ")} and {site.areas.at(-1)}, and most of them have been coming back for years.</p>
           </Reveal>

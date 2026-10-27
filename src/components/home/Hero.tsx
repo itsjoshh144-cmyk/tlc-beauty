@@ -22,8 +22,8 @@ export function Hero() {
           </div>
           <div>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-cocoa">
-              Clinical facials, lash lifts, waxing, nails and massage with Tania Cahalane at Allure Beauty Suites. One therapist, one quiet
-              room, and an hour that is entirely about you.
+              Clinical facials, lash lifts, waxing, nails and massage with Tania Cahalane in her own private treatment room at Allure Beauty
+              Suites. One familiar therapist, a calm room of her own, and an hour that is entirely about you.
             </p>
           </div>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row hero-in">
@@ -46,7 +46,7 @@ export function Hero() {
             <Monogram className="size-28 sm:size-32" />
           </div>
           <div className="absolute -right-2 bottom-16 rounded-2xl sm:bottom-auto sm:top-10 bg-ivory/95 px-5 py-4 shadow-[0_10px_40px_-14px_rgba(43,33,28,0.35)] backdrop-blur sm:-right-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cocoa">Wed &amp; Fri · 9am – 5pm</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cocoa">Wed &amp; Fri · 9am – 7pm</p>
             <p className="h-display mt-1 text-2xl">Book online, 24/7</p>
           </div>
         </div>

@@ -7,7 +7,7 @@
 ![Desktop home page](images/desktop-home.png)
 
 ## The problem
-Tania is a highly experienced one-person business, but online she looked like every other salon. Her prices and booking lived on a booking platform, there was no site that showed who she is, and local rivals with bigger review counts showed up first. Clients had no easy way to see the full menu, work out what a visit would cost, or understand why she is worth choosing.
+Tania is a highly experienced therapist with her own private treatment room inside a Peacehaven beauty clinic, but online she looked like every other salon. Her prices and booking lived on a booking platform, there was no site that showed who she is, and local rivals with bigger review counts showed up first. Clients had no easy way to see the full menu, work out what a visit would cost, or understand why she is worth choosing.
 
 ## What we built
 - **A site that books appointments.** Every page leads to Tania's Timely booking. On phones, a sticky bar keeps **Book now**, **WhatsApp** and **Call** one tap away.

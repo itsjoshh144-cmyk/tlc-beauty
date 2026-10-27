@@ -27,10 +27,10 @@ export const site = {
   mapLink:
     "https://www.google.com/maps/search/?api=1&query=Allure+Beauty+Suites+226+South+Coast+Road+Peacehaven+BN10+8JR",
   hours: [
-    { day: "Wednesday", open: "09:00", close: "17:00", label: "9am – 5pm" },
-    { day: "Friday", open: "09:00", close: "17:00", label: "9am – 5pm" },
+    { day: "Wednesday", open: "09:00", close: "19:00", label: "9am – 7pm" },
+    { day: "Friday", open: "09:00", close: "19:00", label: "9am – 7pm" },
   ],
-  hoursSummary: "Wednesdays & Fridays, 9am – 5pm",
+  hoursSummary: "Wednesdays & Fridays, 9am – 7pm",
   areas: ["Peacehaven", "Newhaven", "Saltdean", "Rottingdean", "Telscombe", "Seaford", "Brighton"],
 
   // TODO slots: fill these in and the "to add" markers disappear.

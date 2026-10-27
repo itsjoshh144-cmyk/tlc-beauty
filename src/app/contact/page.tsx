@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Book & Contact",
   description:
-    "Book online or message Tania. TLC Beauty Specialist, Allure Beauty Suites, 226 South Coast Road, Peacehaven BN10 8JR. Open Wednesdays and Fridays, 9am to 5pm.",
+    "Book online or message Tania. TLC Beauty Specialist, Allure Beauty Suites, 226 South Coast Road, Peacehaven BN10 8JR. Open Wednesdays and Fridays, 9am to 7pm.",
   alternates: { canonical: "/contact" },
 };
 

@@ -6,7 +6,7 @@ export function TrustBar() {
     { big: "NVQ 2 & 3", small: "Fully qualified therapist" },
     { big: "25+ years", small: "Experience in beauty" },
     site.rating ? { big: "rating", small: "" } : { big: "Clinicare", small: "Clinical skincare" },
-    { big: "One-to-one", small: "Private suite in Peacehaven" },
+    { big: "One-to-one", small: "Private room at Allure, Peacehaven" },
   ];
   return (
     <section aria-label="Why clients trust Tania" className="border-y border-gold/25 bg-ivory">
